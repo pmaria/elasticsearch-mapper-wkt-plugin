@@ -97,8 +97,8 @@ POST http://localhost:9200/my_index/my_type/_search
 
 ## Links
 
-https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html
-https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html
-https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-shape.html
-https://www.elastic.co/blog/found-writing-a-plugin
-https://en.wikipedia.org/wiki/Well-known_text
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-shape.html
+* https://www.elastic.co/blog/found-writing-a-plugin
+* https://en.wikipedia.org/wiki/Well-known_text
