@@ -100,5 +100,7 @@ POST http://localhost:9200/my_index/my_type/_search
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-shape.html
+* https://github.com/elastic/elasticsearch/tree/2.3/plugins/mapper-murmur3
+* https://github.com/elastic/elasticsearch/tree/2.3/plugins/mapper-attachments
 * https://www.elastic.co/blog/found-writing-a-plugin
 * https://en.wikipedia.org/wiki/Well-known_text
