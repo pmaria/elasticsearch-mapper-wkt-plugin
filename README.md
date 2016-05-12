@@ -29,7 +29,7 @@ PUT http://localhost:9200/my_index/my_type/1
 {
   "name": "Wind & Wetter, Berlin, Germany",
   "location": {
-    "type": "Point",
+    "type": "point",
     "coordinates": [13.400544, 52.530286]
   }
 }
@@ -98,8 +98,8 @@ POST http://localhost:9200/my_index/my_type/_search
 ## Links
 
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html
-* https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html
 * https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-shape.html
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-geo-shape-query.html
 * https://github.com/elastic/elasticsearch/tree/2.3/plugins/mapper-murmur3
 * https://github.com/elastic/elasticsearch/tree/2.3/plugins/mapper-attachments
 * https://www.elastic.co/blog/found-writing-a-plugin
