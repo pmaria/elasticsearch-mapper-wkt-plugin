@@ -6,11 +6,11 @@
   </formats>
   <includeBaseDirectory>false</includeBaseDirectory>
   <files>
-		<file>
-			<source>${basedir}/plugin-descriptor.properties</source>
-			<outputDirectory></outputDirectory>
-			<filtered>true</filtered>
-		</file>
+    <file>
+      <source>${basedir}/plugin-descriptor.properties</source>
+      <outputDirectory></outputDirectory>
+      <filtered>true</filtered>
+    </file>
   </files>
   <dependencySets>
     <dependencySet>
