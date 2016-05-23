@@ -1,5 +1,28 @@
 # Elasticsearch Mapper WKT Plugin
 
+This is a plugin for [Elasticsearch](http://github.com/elasticsearch/elasticsearch). It allows the use of [WKT](https://en.wikipedia.org/wiki/Well-known_text) for indexing Geo Shapes in Elasticsearch.
+
+After indexing, the Elasticsearch [Query DSL for Geo Shapes](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-geo-shape-query.html) can be used normally.
+
+## Installation
+You need [Apache Maven](http://maven.apache.org/) to build and package the plugin.
+
+Run the following in the project root directory:
+
+    mvn package
+
+This will create a zipped plugin under [mapper-wkt-home]/target/releases.
+
+Then, in [elasticsearch_home] install the plugin:
+
+    ./bin/plugin install file:///path/to/plugin.zip
+
+or, on Windows:
+
+    .bin\plugin.bat install file:///path/to/plugin.zip
+
+If it was running, restart the node after installing.
+
 ## Regular scenario
 
 Create index with geo mappings:
