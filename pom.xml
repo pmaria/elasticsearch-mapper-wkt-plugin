@@ -4,7 +4,7 @@
     <groupId>org.elasticsearch.plugin.mapper.wkt</groupId>
     <artifactId>MapperWKTPlugin</artifactId>
     <packaging>jar</packaging>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>Mapper WKT Plugin</name>
     <description>Adds WKT mapping types and indexes them as native geo properties</description>
     <url>http://maven.apache.org</url>
@@ -47,7 +47,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!-- Lucene spatial, make sure when upgrading to work with latest 
+        <!-- Lucene spatial, make sure when upgrading to work with latest
             version of jts/spatial4j dependencies -->
         <dependency>
             <groupId>org.apache.lucene</groupId>

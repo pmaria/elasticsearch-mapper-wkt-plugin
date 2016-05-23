@@ -18,8 +18,7 @@
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <excludes>
-                <exclude>com.carrotsearch.randomizedtesting:randomizedtesting-runner
-                </exclude>
+                <exclude>com.carrotsearch.randomizedtesting:randomizedtesting-runner</exclude>
                 <exclude>org.hamcrest:hamcrest-all</exclude>
                 <exclude>junit:junit</exclude>
                 <exclude>org.apache.lucene:*</exclude>
