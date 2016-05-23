@@ -9,7 +9,7 @@
     <description>Adds WKT mapping types and indexes them as native geo properties</description>
     <url>http://maven.apache.org</url>
     <properties>
-        <elasticsearch.version>2.3.2</elasticsearch.version>
+        <elasticsearch.version>2.3.3</elasticsearch.version>
         <lucene.maven.version>5.5.0</lucene.maven.version>
         <testframework.version>2.3.2</testframework.version>
     </properties>

@@ -9,7 +9,7 @@ You need [Apache Maven](http://maven.apache.org/) to build and package the plugi
 
 Run the following in the project root directory:
 
-    mvn package
+    mvn clean package
 
 This will create a zipped plugin under [mapper-wkt-home]/target/releases.
 
