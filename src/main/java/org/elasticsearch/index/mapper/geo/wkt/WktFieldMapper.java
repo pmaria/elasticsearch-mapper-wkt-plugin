@@ -51,9 +51,6 @@ public class WktFieldMapper extends GeoShapeFieldMapper {
 
     public static final String CONTENT_TYPE = "wkt";
 
-    public static final String FIELD_NAME = "name";
-    public static final String FIELD_LOCATION = "location";
-
     public static final JtsSpatialContext SPATIAL_CONTEXT = JtsSpatialContext.GEO;
 
     /**
@@ -188,15 +185,7 @@ public class WktFieldMapper extends GeoShapeFieldMapper {
             }
 
             // parse the document and populate the spatial4j Shape
-            Shape shape = null;
-            String fieldName = parser.currentName();
-            if (FIELD_LOCATION.equals(fieldName)) {
-
-                shape = parseWktToShape(parser);
-            } else {
-                parser.nextToken();
-                parser.skipChildren();
-            }
+            Shape shape = parseWktToShape(parser);
 
             // If shape is still null, something has gone wrong
             if (shape == null) {

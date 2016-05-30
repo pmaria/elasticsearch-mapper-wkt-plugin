@@ -121,7 +121,7 @@ public class WktFieldMapperTest extends EsSingleWktMockNodeTestCase {
         .setSource(jsonBuilder()
                 .startObject()
                     .field("name", "Blakely Island")
-                    .field("location", "POLYGON ((-122.83 48.57, -122.77 48.56, -122.79 48.53, -122.83 48.57))")
+                    .field("wkt-quadtree", "POLYGON ((-122.83 48.57, -122.77 48.56, -122.79 48.53, -122.83 48.57))")
                 .endObject()
         )
         .setRefresh(true)
@@ -135,7 +135,7 @@ public class WktFieldMapperTest extends EsSingleWktMockNodeTestCase {
         SearchResponse searchResponse = client()
                 .prepareSearch(index)
                 .setTypes(type)
-                .setQuery(geoIntersectionQuery("location", query))
+                .setQuery(geoIntersectionQuery("wkt-quadtree", query))
                 .execute()
                 .actionGet();
 
@@ -222,7 +222,7 @@ public class WktFieldMapperTest extends EsSingleWktMockNodeTestCase {
                             .startObject("name")
                                 .field("type", "string")
                             .endObject()
-                            .startObject("location")
+                            .startObject("wkt-quadtree")
                                 .field("type", "wkt")
                                 .field("tree", "quadtree")
                             .endObject()
